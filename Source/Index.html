@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <span>
+        <a href="#" title="Personal Website">
+          <img src="../Assets/logo.jpg" height="50" width="50" />
+        </a>
+      </span>
+      <span>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </span>
+    </header>
+
+    <div>
+      <section id="about">
+        <h3>Who Am I?</h3>
+        <p>Hi i'm <b>name here</b> then some content about what i am about</p>
+      </section>
+      <section id="" skills>
+        <h3>Here Are Some of My Expertise</h3>
+        <p>some content about how well versed i am in my various skills</p>
+        <div>
+          <img />
+          <div>
+            <h4><b>Web Design</b></h4>
+            <p>some content about the web design</p>
+          </div>
+        </div>
+        <div>
+          <img />
+          <div>
+            <h4><b>Photoshop</b></h4>
+            <p>some content about photoshop</p>
+          </div>
+        </div>
+        <div>
+          <img />
+          <div>
+            <h4><b>HTML5</b></h4>
+            <p>some content</p>
+          </div>
+        </div>
+        <div>
+          <img />
+          <div>
+            <h4><b>CSS3</b></h4>
+            <p>some content</p>
+          </div>
+        </div>
+        <div>
+          <img />
+          <div>
+            <h4><b>WordPress</b></h4>
+            <p>some content</p>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <button type="button">Primary School</button>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <button type="button">High School</button>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <button type="button">University</button>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h3>Work Experience</h3>
+        <div>
+          <img />
+          <div>
+            <h4><b>Places i've worked</b></h4>
+            <p>some content</p>
+          </div>
+        </div>
+        <div>
+          <img />
+          <div>
+            <h4><b>Places i've worked</b></h4>
+            <p>some content</p>
+          </div>
+        </div>
+        <div>
+          <img />
+          <div>
+            <h4><b>Places i've worked</b></h4>
+            <p>some content</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Contact Me</h3>
+        <div>
+          <form>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div>
+        <form method="get">
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <h4>
+                    <a>About</a>
+                  </h4>
+                  <p>This is a dummy text for the timebeing</p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
