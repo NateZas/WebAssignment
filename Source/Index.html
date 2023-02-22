@@ -4,129 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="design.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
-    <header>
-      <span>
-        <a href="#" title="Personal Website">
-          <img src="../Assets/logo.jpg" height="50" width="50" />
-        </a>
-      </span>
-      <span>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Contact</a></li>
+  <body class="font-link">
+    <nav class="navbar navbar-expand-md bg-green navbar-dark navbar-s">
+      <a class="navbar-brand" href="#" title="Personal Website">
+        <img src="../Assets/logo.jpg" height="50" width="50" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#education"
+              >Education</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="#contact">Contact</a>
+          </li>
         </ul>
-      </span>
-    </header>
+      </div>
+    </nav>
 
     <div>
-      <section id="about">
+      <section id="about" class="sec" style="padding-top: 20px">
         <h3>Who Am I?</h3>
-        <p>Hi i'm <b>name here</b> then some content about what i am about</p>
+        <p>
+          Hi i'm <b>Tadesse Kifle,</b> i am a porter, runner and accounant from
+          Addis Abeba currently working in the United Nations Economic
+          Commission for Africa
+        </p>
       </section>
-      <section id="skills">
+      <section id="skills" class="sec">
         <h3>Here Are Some of My Expertise</h3>
-        <p>some content about how well versed i am in my various skills</p>
-        <div>
-          <img />
-          <div>
-            <h4><b>Web Design</b></h4>
-            <p>some content about the web design</p>
+        <p>
+          I am foremostly an accoutant and have experince in various accounting
+          applications, as well as basic office programs and those specific to
+          the UNECA
+        </p>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="../Assets/office.jpg" style="width: 100%" />
+              <div class="container">
+                <h4><b>MS Office</b></h4>
+                <p>
+                  I am well versed in all the functionalities of these
+                  applications
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <img />
-          <div>
-            <h4><b>Photoshop</b></h4>
-            <p>some content about photoshop</p>
+          <div class="column">
+            <div class="card">
+              <img src="../Assets/umoja.jpg" style="width: 100%" />
+              <div class="container">
+                <h4><b>UMOJA</b></h4>
+                <p>
+                  UMOJA is an enterprise resource planning system used by The
+                  UNECA
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <img />
-          <div>
-            <h4><b>HTML5</b></h4>
-            <p>some content</p>
+          <div class="column">
+            <div class="card">
+              <img src="../Assets/html.png" style="width: 100%" />
+              <div class="container">
+                <h4><b>HTML</b></h4>
+                <p>I am skilled in web development through the HTML language</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <img />
-          <div>
-            <h4><b>CSS3</b></h4>
-            <p>some content</p>
-          </div>
-        </div>
-        <div>
-          <img />
-          <div>
-            <h4><b>WordPress</b></h4>
-            <p>some content</p>
+          <div class="column">
+            <div class="card">
+              <img src="../Assets/c++.png" style="width: 100%" />
+              <div class="container">
+                <h4><b>C++</b></h4>
+                <p>I am experienced in the C++ programming language</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="education">
+
+      <section id="education" class="sec">
         <h3>Education</h3>
-        <button type="button">Primary School</button>
-        <div>
+        <button type="button" class="collapsible">Secondary School</button>
+        <div class="content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            High School Diploma <br />
+            Misrak Atekalay Secondary school
           </p>
         </div>
 
-        <button type="button">High School</button>
-        <div>
+        <button type="button" class="collapsible">University</button>
+        <div class="content">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <button type="button">University</button>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            B.A Degree in Accounting <br />
+            Addis Abeba University <br />
+            2016
           </p>
         </div>
       </section>
-      <section>
+
+      <section id="experience" class="sec" style="padding: 20px">
         <h3>Work Experience</h3>
-        <div>
-          <img />
+        <div class="indent">
           <div>
-            <h4><b>Places i've worked</b></h4>
-            <p>some content</p>
+            <h4><b>Porter</b></h4>
+            <p>
+              From 2006 - 2010 i worked as a porter in the United Nation
+              Economic Commision for Africa
+            </p>
           </div>
         </div>
-        <div>
-          <img />
+        <div class="indent">
           <div>
-            <h4><b>Places i've worked</b></h4>
-            <p>some content</p>
+            <h4><b>Junior Accountant</b></h4>
+            <p>
+              After getting my accounting degree from AAU i worked as a Junior
+              Accountant at UNECA from 2011 to 2016
+            </p>
           </div>
         </div>
-        <div>
-          <img />
+        <div class="indent">
           <div>
-            <h4><b>Places i've worked</b></h4>
-            <p>some content</p>
+            <h4><b>Accountant</b></h4>
+            <p>Full time accountant at UNECA starting from 2017</p>
           </div>
         </div>
       </section>
-      <section>
+
+      <section id="contact" class="sec">
         <h3>Contact Me</h3>
-        <div>
+        <div class="cont">
           <form>
             <label for="fname">First Name</label>
             <input
@@ -166,35 +207,18 @@
       </section>
     </div>
 
-    <footer>
-      <div>
-        <form method="get">
-          <table>
-            <tr>
-              <td>
-                <div>
-                  <h4>
-                    <a>About</a>
-                  </h4>
-                  <p>This is a dummy text for the timebeing</p>
-                </div>
-              </td>
-              <td>
-                <div>
-                  <h4>Quick Links</h4>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </form>
+    <footer class="foot">
+      <div class="box">
+        <div>
+          <br />
+          <br />
+          <h4>Tadesse.kifle@gmail.com</h4>
+        </div>
+        <div>
+          <br />
+          <br />
+          <h4>+251944341434</h4>
+        </div>
       </div>
     </footer>
 
@@ -206,6 +230,23 @@
         } else {
           x.className = "topnav";
         }
+      }
+    </script>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
       }
     </script>
   </body>
